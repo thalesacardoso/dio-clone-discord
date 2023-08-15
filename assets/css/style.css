@@ -12,7 +12,8 @@ DATA:
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
-    list-style: none;    
+    list-style: none; 
+    color: #23272A;   
 }
 
 html {
@@ -32,12 +33,13 @@ h1 {
 h2 {
     font-size: 2.5rem;
     font-weight: 600;
+    line-height: 54.5px;
 }
 
 p {
     font-size: 1rem;
     font-weight: 400;
-    color: #555;
+    line-height: 21.8px;
 }
 
 button {
@@ -48,9 +50,63 @@ button {
     font-family: 'Luckiest Guy', cursive;
 }
 
+.content {
+    width: 1280px;
+    margin: 0 auto;
+}
+
 /*******************************
     ESTILO DO HEADER
 *******************************/
+header, main, footer {
+    padding: 40px 24px;
+}
 
+header {
+    background-image: url(../imagens/Header-Background.svg);
+    background-size: cover;
+    background-position: center;
+    height: 460px;
+}
 
+header .content {
+    width: 760px;
+    margin: 55px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
 
+header h1 {
+    color: white;
+    text-align: center;
+    line-height: 56px;
+    width: 315px;
+}
+
+header p {
+    text-align: center;
+    color: white;
+}
+
+header .btn {
+    display: flex;
+    gap: 16px;
+}
+
+header .btn button {
+    height: 44px;
+    border-radius: 28px ;
+}
+
+button.bg-white {
+    background-color: white;
+    padding: 11px 24px;
+}
+
+button.bg-black {
+    background-color: #23272A;
+    color: white;
+    padding: 11px 16px;
+}

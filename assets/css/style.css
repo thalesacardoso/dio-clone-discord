@@ -21,18 +21,14 @@ html {
     color: #23272A;
 }
 
-body {
-    background-color: lightblue;
-}
-
 h1 {
     font-size: 3.5rem;
-    font-weight: 400;
+    font-weight: 800;
 }
 
 h2 {
     font-size: 2.5rem;
-    font-weight: 600;
+    font-weight: 800;
     line-height: 54.5px;
 }
 
@@ -48,6 +44,7 @@ button {
 
 .luckiest {
     font-family: 'Luckiest Guy', cursive;
+    font-weight: 400;
 }
 
 .content {
@@ -58,15 +55,12 @@ button {
 /*******************************
     ESTILO DO HEADER
 *******************************/
-header, main, footer {
-    padding: 40px 24px;
-}
-
 header {
     background-image: url(../imagens/Header-Background.svg);
     background-size: cover;
     background-position: center;
     height: 460px;
+    padding: 40px 24px;
 }
 
 header .content {
@@ -82,7 +76,8 @@ header h1 {
     color: white;
     text-align: center;
     line-height: 56px;
-    width: 315px;
+    width: 320px;
+    letter-spacing: 1px;
 }
 
 header p {
@@ -114,3 +109,57 @@ button.bg-black {
 /*******************************
     ESTILO DO MAIN
 *******************************/
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+main section {
+    padding: 40px 24px;
+}
+
+main section:nth-child(even){
+    background-color: #F6F6F6;
+}
+
+main .content {
+    max-width: 970px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+main .content img {
+    max-width: 100%;
+}
+
+main .content .textos {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+main section.secao-2 img {
+    order: 2;
+}
+
+main section.secao-4 .content {
+    max-width: 805px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main section.secao-4 .content img {
+    order: 2;
+}
+
+main section.secao-4 .textos {
+    text-align: center;
+}
+
+main section.secao-4 h2.luckiest {
+    line-height: 40px;
+}

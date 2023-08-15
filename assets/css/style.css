@@ -2,8 +2,8 @@
 DESENVOLVIDO POR: Thales A. Cardoso
 DATA: 
 */
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap');
 
 * {
     margin: 0;
@@ -11,13 +11,13 @@ DATA:
     border: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    list-style: none;
+    font-family: 'Open Sans', sans-serif;
+    list-style: none;    
 }
 
 html {
     font-size: 16px;
-    color: black;
+    color: #23272A;
 }
 
 body {
@@ -25,12 +25,12 @@ body {
 }
 
 h1 {
-    font-size: 1.8rem;
-    font-weight: 600;
+    font-size: 3.5rem;
+    font-weight: 400;
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-weight: 600;
 }
 
@@ -42,6 +42,10 @@ p {
 
 button {
     cursor: pointer;
+}
+
+.luckiest {
+    font-family: 'Luckiest Guy', cursive;
 }
 
 /*******************************

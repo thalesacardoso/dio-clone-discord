@@ -42,15 +42,15 @@ button {
     cursor: pointer;
 }
 
+img {
+    max-width: 100%;
+}
+
 .luckiest {
     font-family: 'Luckiest Guy', cursive;
     font-weight: 400;
 }
 
-.content {
-    width: 1280px;
-    margin: 0 auto;
-}
 
 /*******************************
     ESTILO DO HEADER
@@ -125,14 +125,11 @@ main section:nth-child(even){
 }
 
 main .content {
-    max-width: 970px;
+    max-width: 975px;
+    margin: 0 auto;
     display: flex;
     gap: 16px;
     align-items: center;
-}
-
-main .content img {
-    max-width: 100%;
 }
 
 main .content .textos {
@@ -167,3 +164,75 @@ main section.secao-4 h2.luckiest {
 /*******************************
     ESTILO DO FOOTER
 *******************************/
+
+footer {
+    height: 135px;
+    background-color: #23272A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer img {
+    max-width: 100%;
+}
+
+
+/*******************************
+    ESTILO DO MOBILE
+*******************************/
+
+@media screen and (min-width:800px) and (max-width: 1050px) {
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 32px;
+}
+
+header .content {
+    width: 75vw;
+}
+
+main .content {
+    width: 90vw;
+}
+
+main .content .textos {
+    width: 38%;
+}
+
+main .content img {
+    max-width: 62%;
+}
+
+main section.secao-4 .content {
+    max-width: 62vw;
+}
+
+main section.secao-4 .textos {
+    width: 100%;
+}
+
+main section.secao-4 img {
+    max-width: 100%;
+}
+
+main section.secao-4 h2.luckiest {
+    font-size: 2.3rem;
+}
+
+footer {
+    height: 100px;
+}
+
+footer img {
+    max-width: 80%;
+}
+
+
+
+}
